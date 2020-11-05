@@ -1,7 +1,7 @@
 module.exports = {
   plugins: [
     [
-      require.resolve('babel-plugin-module-resolver'),
+      'module-resolver',
       {
         root: '.',
         extensions: ['.js', '.jsx', '.json'],
