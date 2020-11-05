@@ -13,6 +13,7 @@
   },
   "files": [
     "base.js",
+    "cra.js",
     "index.js",
     "jest.js"
   ],
