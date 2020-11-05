@@ -407,8 +407,6 @@ module.exports = function (webpackEnv) {
                   'babel-preset-react-app/webpack-overrides'
                 ),
                 // @remove-on-eject-begin
-                babelrc: false,
-                configFile: false,
                 presets: [
                   [
                     require.resolve('babel-preset-react-app'),
@@ -427,6 +425,7 @@ module.exports = function (webpackEnv) {
                     ? 'production'
                     : isEnvDevelopment && 'development',
                   [
+                    'babel-plugin-module-resolver',
                     'babel-plugin-named-asset-import',
                     'babel-preset-react-app',
                     'react-dev-utils',
@@ -484,6 +483,7 @@ module.exports = function (webpackEnv) {
                     ? 'production'
                     : isEnvDevelopment && 'development',
                   [
+                    'babel-plugin-module-resolver',
                     'babel-plugin-named-asset-import',
                     'babel-preset-react-app',
                     'react-dev-utils',
