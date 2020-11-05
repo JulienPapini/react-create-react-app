@@ -1,13 +1,31 @@
 {
   "package": {
+    "scripts": {
+      "start": "react-scripts start",
+      "lint": "eslint --ext .js --ext .jsx .",
+      "lint:fix": "eslint --ext .js --ext .jsx --fix .",
+      "format": "prettier --write {src,public}/**/*.{js,jsx,json,yml,yaml,html,css,md}",
+      "test": "react-scripts test",
+      "build": "react-scripts build",
+      "eject": "react-scripts eject"
+    },
+    "husky": {
+      "hooks": {
+        "pre-commit": "lint-staged"
+      }
+    },
+    "lint-staged": {
+      "*.{js,jsx}": ["eslint --fix", "prettier --write"],
+      "*.{json,yml,yaml,html,css,md}": ["prettier --write"]
+    },
+    "eslintConfig": {
+      "extends": ["@julienpapini/react-app", "@julienpapini/react-app/jest"]
+    },
     "dependencies": {
       "@testing-library/jest-dom": "^5.11.4",
       "@testing-library/react": "^11.1.0",
       "@testing-library/user-event": "^12.1.10",
       "web-vitals": "^0.2.4"
-    },
-    "eslintConfig": {
-      "extends": ["@julienpapini/react-app", "@julienpapini/react-app/jest"]
     }
   }
 }
