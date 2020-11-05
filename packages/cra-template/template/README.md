@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+# Project name <!-- omit in toc -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project description.
 
-## Available Scripts
+## Table of contents <!-- omit in toc -->
 
-In the project directory, you can run:
+- [1. Project information](#1-project-information)
+  - [1.1. Packages version](#11-packages-version)
+- [2. Contributing](#2-contributing)
+  - [2.1. Prerequisites](#21-prerequisites)
+  - [2.2. Setting up the project](#22-setting-up-the-project)
+  - [2.3. Gitflow](#23-gitflow)
+  - [2.4. Code linting and formatting](#24-code-linting-and-formatting)
+  - [2.5. Running tests](#25-running-tests)
+  - [2.6. Production build](#26-production-build)
+- [3. Contributors](#3-contributors)
 
-### `npm start`
+## 1. Project information
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Tag: **TAG**
+- Type: **React.js**
+- Language: **Javascript**
+- Package name: **package-name**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 1.1. Packages version
 
-### `npm test`
+- react: **17.x**
+- react-scripts: **4.x**
+- eslint: **7.x**
+- prettier: **2.x**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 2. Contributing
 
-### `npm run build`
+### 2.1. Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The following softwares must be installed and configured before contributing:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js **14.x**
+- NPM
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The following **Visual Studio Code** plugins are **HIGHLY RECOMMENDED**:
 
-### `npm run eject`
+- [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 2.2. Setting up the project
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install dependencies with NPM:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+$ npm install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Start the local development server by running:
 
-## Learn More
+```bash
+$ npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Open your browser and go to http://localhost:3000/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 2.3. Gitflow
 
-### Code Splitting
+This project follow the Gitflow workflow with the following branches:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `main` Production branch. Code must be tested and validated before pushing.
+- `hotfix/{name}` Branch where bug fixes are added when they are detected in production.
+- `release/{version}` No feature are added in the release branch except bug fixes.
+- `develop` Branch where feature are integrated for the next release.
+- `feature/{feature-name}` All new features must be in branches prefixed with **feature/** and feature name must be in **spinal-case**.
 
-### Analyzing the Bundle Size
+### 2.4. Code linting and formatting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To run Eslint, run the following command:
 
-### Making a Progressive Web App
+```bash
+$ npm run lint
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+If you want to automatically fix your code, run:
 
-### Advanced Configuration
+```bash
+$ npm run lint:fix
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+To format your code, run the following command:
 
-### Deployment
+```bash
+$ npm run format
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 2.5. Running tests
 
-### `npm run build` fails to minify
+To run unit tests, execute the following command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+$ npm test
+```
+
+### 2.6. Production build
+
+To create a production build, run the following command:
+
+```bash
+$ npm run build
+```
+
+The production build are available in the `build/` folder.
+
+## 3. Contributors
+
+- [Julien PAPINI](mailto:julien.papini@gmail.com)
