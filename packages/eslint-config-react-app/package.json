@@ -1,6 +1,6 @@
 {
   "name": "@julienpapini/eslint-config-react-app",
-  "version": "6.0.0",
+  "version": "6.0.4",
   "description": "Custom ESLint configuration used by Create React App",
   "repository": {
     "type": "git",
