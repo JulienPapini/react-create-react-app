@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { RootSwitch, Router } from '@app/navigation/components';
+import { NavigationSuspense, RootSwitch, Router } from '@app/navigation/components';
 import WebVitals from '@app/shared/services/web-vitals';
 
 const App = () => (
   <Router>
-    <RootSwitch />
+    <NavigationSuspense>
+      <RootSwitch />
+    </NavigationSuspense>
   </Router>
 );
 
