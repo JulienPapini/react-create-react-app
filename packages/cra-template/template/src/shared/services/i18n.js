@@ -13,8 +13,8 @@ i18n
   .init({
     debug: false,
     fallbackLng: 'en',
-    whitelist: ['en', 'fr'],
-    load: 'languageOnly',
+    supportedLngs: ['en', 'fr'],
+    nonExplicitSupportedLngs: true,
     ns: ['default'],
     defaultNS: 'default',
     interpolation: {
