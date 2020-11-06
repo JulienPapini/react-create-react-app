@@ -58,7 +58,11 @@ Custom Create React App.
 ## 3. Usage
 
 ```bash
-$ create-react-app --use-npm --scripts-version @julienpapini/react-scripts --template @julienpapini/cra-template <folder-name>
+$ npx create-react-app \
+    --use-npm \
+    --scripts-version @julienpapini/react-scripts \
+    --template @julienpapini/cra-template \
+    <foler-name>
 ```
 
 ## 4. Contributors
