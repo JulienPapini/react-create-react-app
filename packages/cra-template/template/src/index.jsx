@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import { NavigationSuspense, RootSwitch, Router } from '@app/navigation/components';
 import WebVitals from '@app/shared/services/web-vitals';
 
+import '@app/shared/services/i18n';
+
 const App = () => (
   <Router>
     <NavigationSuspense>
