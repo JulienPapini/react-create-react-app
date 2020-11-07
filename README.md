@@ -1,4 +1,4 @@
-# Custom Create React App <!-- omit in toc -->
+# Template - Create React App <!-- omit in toc -->
 
 Custom Create React App.
 
