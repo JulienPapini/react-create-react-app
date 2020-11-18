@@ -1,4 +1,4 @@
-# Template - Create React App <!-- omit in toc -->
+# React - Create React App <!-- omit in toc -->
 
 Custom Create React App.
 
@@ -17,7 +17,7 @@ Custom Create React App.
 
 ## 1. Project information
 
-- Tag: **TEMPL**
+- Tag: **REACT**
 - Type: **Scripting, Template, Boilerplate, Configuration**
 - Language: **Various**
 - Forked from: **[facebook/create-react-app](https://github.com/facebook/create-react-app)**
